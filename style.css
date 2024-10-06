@@ -1,0 +1,159 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Menu */
+#sidebar {
+    width: 200px;
+    height: 100vh; /* Full height */
+    background-color: #0288d1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+#sidebar ul li a:hover {
+    background-color: #01579b;
+}
+#about-project {
+    margin-left: 220px; /* Align after sidebar */
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.ghg-head{
+    background-color: #0288d1;
+    margin-top: -23px;
+    height: 70px;
+    padding-top: 26px;
+    padding-left: 15px;
+    color: white;
+   
+}
+h3{
+    padding-left: 10px;
+}
+.imagebox{
+    background-position: cover;
+    border: 1px solid black;
+    width:100%;
+    height: 500px;
+    padding-left: 199px;
+}
+img{
+    width: 100%;
+    height: 500px;
+    /* z-index: 0; */
+    /* position: relative; */
+  
+}
+.text{
+    color: white;
+    margin-top: -250px;
+    position: absolute;
+    padding-left: 100px;
+}
+
+
+
+/* Main Header with Background Image */
+#main-header {
+    width: 100%;
+    /* Align after sidebar */
+    /* margin-left: 400px;
+   padding: 20px 20px; */
+   /* background-image: url(in.jpg); Replace with your background image */
+   /* background-size: 100%;
+   background-position: center; */
+   /* color: white; */
+   /* text-align: center; */
+
+}
+
+#main-header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);/* Adding a shadow for better readability */
+}
+/* Introduction Section with Colored Background */
+#intro {
+    margin-left: 500px;
+    margin-bottom: 20px;
+    margin-top: 10px;/* Align after sidebar */
+    padding: 10px;
+    width: 600px;
+    background-color: #fff; /* White background for the intro section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+      
+    } 
+
+#intro button {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#intro button:hover {
+    background-color: #01579b;
+}
+
+/* Footer */
+footer {
+    /* margin-left: 100px; Align after sidebar */
+    text-align: center;
+    padding: 10px;
+    background-color: #0288d1;
+    color: white;
+    height: 100px;
+}
+.impact-grid{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin-left: 500px;
+}
+.co2img{
+    width: 50%;
+    height: 300px;
+    border-radius: 6px;
+}
+button{
+    display: block;
+}
+.imp-btn{
+    background-color: lightskyblue;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

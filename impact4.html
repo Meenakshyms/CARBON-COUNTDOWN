@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact 1 - Greenhouse Gases</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .impact-image {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        .dropdown {
+            margin-bottom: 20px;
+        }
+
+        .dropdown select {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Impact of NH3</h1>
+
+        <!-- Dropdown menu to select a year -->
+        <div class="dropdown">
+            <label for="year-select">Select a year:</label>
+            <select id="year-select" onchange="changeImage()">
+                <option value="2005">2005</option>
+                <option value="2010">2010</option>
+                <option value="2015">2015</option>
+                <option value="2020">2020</option>
+            </select>
+        </div>
+
+        <!-- Image that changes based on the selected year -->
+        <img id="impact-image" class="impact-image" src="cfc2005.jpeg" alt="Impact Image">
+
+        <p>Select a year to see how the impact of greenhouse gases has changed.</p>
+    </div>
+
+    <script>
+        // JavaScript function to change the image based on selected year
+        function changeImage() {
+            var year = document.getElementById("year-select").value;
+            var image = document.getElementById("impact-image");
+
+            // Change the image based on the year selected
+            if (year === "2005") {
+                image.src = "cfc2005.jpeg";
+            } else if (year === "2010") {
+                image.src = "cfc2010.jpeg";
+            } else if (year === "2015") {
+                image.src = "cfc2015.jpeg";
+            } else if (year === "2020") {
+                image.src = "cfc2020.jpeg";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Greenhouse Gas Impacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="ghg-head" >
+        <h1>Greenhouse Gas Impacts</h1>
+    </header>
+
+    <section id="ghg-impacts">
+        <h3 >Click on an Impact to Learn More</h3>
+        <div class="impact-grid">
+            <div>
+            <img src="co2.jpeg" class="co2img" alt="Carbon Dioxide" onclick="showImpact('CO2')">
+            <button class="imp-btn" onclick="window.location.href='impact1.html'">CO2</button>
+            <img src="ch4.jpeg" class="co2img" alt="Methane" onclick="showImpact('ch4')">
+            <button class="imp-btn" onclick="window.location.href='impact2.html'">CH4</button>
+            <img src="n2o.jpeg" class="co2img" alt="Methane" onclick="showImpact('n2o')">
+            <button class="imp-btn" onclick="window.location.href='impact3.html'">N2O</button>
+            <img src="cfc.jpeg" class="co2img" alt="Methane" onclick="showImpact('cfc')">
+            <button class="imp-btn" onclick="window.location.href='impact4.html'">CFC</button>
+
+        </div>
+        </div>  
+    </section>
+
+    
+    <footer>
+        <p>© 2024 Greenhouse Gas Awareness Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
